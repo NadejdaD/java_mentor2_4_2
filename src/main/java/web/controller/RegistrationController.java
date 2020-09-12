@@ -36,7 +36,7 @@ public class RegistrationController {
         } catch (ServletException e) {
             e.printStackTrace();
         }
-        return "redirect:/hello";
+        return "user";
     }
 
 }

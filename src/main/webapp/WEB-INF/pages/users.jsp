@@ -11,6 +11,14 @@
 <body>
 <div align="center">
 <style> a {text-decoration: none;}</style>
+    <table align="center" cellpadding="5">
+        <tr>
+            <td><a href="<c:url value="/user" />">My page</a></td>
+            <td><a href="<c:url value="/admin/addUser" />">Add new user</a></td>
+            <td><a href="<c:url value="/logout" />">Logout</a></td>
+        </tr>
+    </table><br>
+
 <table border="1" cellpadding="5">
     <tr>
         <th>ID</th>
@@ -35,9 +43,6 @@
     </tr>
 </c:forEach>
 </table>
-<br>
-    <a href="<c:url value="/logout" />">Logout</a>
-    <a href="<c:url value="/admin/addUser" />">Add new user</a>
 </div>
 </body>
 </html>

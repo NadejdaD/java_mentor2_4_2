@@ -22,7 +22,7 @@ public class LoginSuccessHandler implements AuthenticationSuccessHandler {
         if (authentication.getAuthorities().stream()
                 .allMatch((Predicate<GrantedAuthority>) grantedAuthority -> grantedAuthority.getAuthority().equals("ROLE_USER")))
         {
-            httpServletResponse.sendRedirect("/hello");
+            httpServletResponse.sendRedirect("/user");
         }
         else if (authentication.getAuthorities().stream()
                 .anyMatch((Predicate<GrantedAuthority>) grantedAuthority -> grantedAuthority.getAuthority().equals("ROLE_ADMIN"))) {
